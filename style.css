@@ -24,8 +24,9 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 100%;
-  font-family: "Forum", "Arial", sans-serif;
+  font-family: "Linux", "Arial", sans-serif;
   font-size: 20px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(90, 90, 90, 1);
 }
@@ -69,6 +70,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,4 +114,28 @@ nav img {
   align-items: center;
   justify-content: space-between;
   width: 1024px;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+  background: #fafafa;
+}
+
+.about-me .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.about-me img {
+  width: 270px;
+  margin: 0 10% 0 0;
+  border-radius: 50%;
+  box-shadow: 1px 5px 15px #000000;
+  filter: contrast(130%) grayscale(50%);
 }
