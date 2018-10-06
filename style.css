@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Raleway semiBold";
   src: url("fonts/Raleway-SemiBold.ttf");
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -138,4 +138,44 @@ nav img {
   border-radius: 50%;
   box-shadow: 1px 5px 15px #000000;
   filter: contrast(130%) grayscale(50%);
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+  background: rgb(60, 60, 60);
+  color: #ffffff;
+}
+
+.skills .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-list {
+  text-align: left;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+.skills-list ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  margin: 15px 0;
+  color: #00d9ff;
+}
+
+.skills-list li {
+  margin-left: 40px;
+  color: #ffffff;
+  list-style-image: url("images/tick-small.png");
+}
+
+.skills figcaption {
+  font: normal 40px "Raleway semiBold", "Arial", sans-serif;
 }
