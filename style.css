@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Raleway semiBold";
+  src: url("fonts/Raleway-SemiBold.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway light";
+  src: url("fonts/Raleway-Light.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Linux";
+  src: url("fonts/linbiolinum_r.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  font-family: "Forum", "Arial", sans-serif;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(90, 90, 90, 1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  height: 100%;
+  margin-top: 50px;
+  font: normal 24px "Linux", "Arial", sans-serif;
+  background-image: url("images/pattern.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-color: rgba(60, 60, 60, 1);
+  color: #ffffff;
+}
+
+header img[alt="lamp"] {
+ filter: drop-shadow(0 1px 10px rgba(255, 255, 0, 0.3));
+  user-select: none;
+}
+
+header h1 {
+  font: 50px "Raleway semiBold", sans-serif;
+  margin-bottom: 0;
+}
+
+header h2 {
+  font: 40px "Raleway light", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font: normal 20px "Linux", "Arial", sans-serif;
+  background-color: rgba(60, 60, 60, 1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+nav a {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color:  #00d9ff;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #ffffff;
+}
+            
+nav img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+
+.content {
+  width: 1024px;
+  text-align: center;
+  position: relative;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1024px;
+}
