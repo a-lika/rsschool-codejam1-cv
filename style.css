@@ -137,7 +137,7 @@ nav img {
   margin: 0 10% 0 0;
   border-radius: 50%;
   box-shadow: 1px 5px 15px #000000;
-  filter: contrast(130%) grayscale(50%);
+  /*filter: contrast(130%) grayscale(50%);*/
 }
 
 .skills {
@@ -181,7 +181,8 @@ nav img {
 }
 
 .skills figcaption,
-.experience figcaption {
+.experience h2,
+.projects h2 {
   font: 700 normal 40px "Raleway semiBold", "Arial", sans-serif;
 }
 
@@ -298,4 +299,80 @@ nav img {
   color: #00d9ff;
 }
 
-.
+.experience img {
+  width: 90px;
+  height: auto;
+  filter: contrast(200%);
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.projects .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1024px;
+  height: 400px;
+  margin: 10% auto;
+}
+
+.project-info img {
+  display: block;
+  height: 400px;
+  width: 500px;
+  filter: drop-shadow(0 2px 20px #000000);
+  user-select: none;
+  object-fit: cover;
+  user-select: none;
+  overflow: hidden;      
+}
+
+.about-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 430px;
+  height: 400px;
+  text-align: justify;
+}
+
+.project-name {
+  width: 100%;
+  margin: 0;
+  font: 700 normal 30px "Raleway semiBold", sans-serif;
+}
+
+.project-name h2 {
+  margin: 0;
+  color: rgba(90, 90, 90, 1);
+  transition: all .2s ease-in;
+  text-shadow: 1px 1px 1px #00d9ff;
+}
+
+.project-name h2:hover {
+  color: #00d9ff;
+}
+
+.project-name > a {
+  font-size: 18px;
+  text-decoration: underline;
+  transition: all .2s ease-in;
+}
+
+.project-name > a:hover {
+  text-decoration: none;
+}
