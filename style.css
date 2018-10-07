@@ -176,7 +176,12 @@ nav img {
   list-style-image: url("images/tick-small.png");
 }
 
-.skills figcaption {
+.skills figure {
+  user-select: none;
+}
+
+.skills figcaption,
+.experience figcaption {
   font: 700 normal 40px "Raleway semiBold", "Arial", sans-serif;
 }
 
@@ -260,3 +265,37 @@ nav img {
   font-weight: 400;
 }
 
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+  background-image: url("images/home-office.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.experience .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-list {
+  margin: 50px 0;
+}
+
+.experience-list p {
+  margin: 5px;
+  text-align: left;
+}
+
+.experience-list p:first-child {
+  color: #00d9ff;
+}
+
+.
