@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Raleway semiBold";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway light";
+  src: url("../fonts/Raleway-Light.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Linux";
+  src: url("../fonts/linbiolinum.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  font-family: "Linux", "Arial", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(90, 90, 90, 1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  height: 100%;
+  margin-top: 50px;
+  font: normal 24px "Linux", "Arial", sans-serif;
+  background-image: url("../images/pattern.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-color: rgba(60, 60, 60, 1);
+  color: #ffffff;
+}
+
+header img[alt="lamp"] {
+ filter: drop-shadow(0 1px 10px rgba(255, 255, 0, 0.3));
+  user-select: none;
+}
+
+header h1 {
+  font: 50px "Raleway semiBold", sans-serif;
+  margin-bottom: 0;
+}
+
+header h2 {
+  font: 40px "Raleway light", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font: normal 20px "Linux", "Arial", sans-serif;
+  background-color: rgba(60, 60, 60, 1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+nav a {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color:  #00d9ff;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #ffffff;
+}
+            
+nav img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+
+.content {
+  width: 1024px;
+  text-align: center;
+  position: relative;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1024px;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+  background: url("../images/sandston.gif") repeat;
+}
+
+.about-me .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.about-me img {
+  width: 270px;
+  margin: 0 10% 0 0;
+  border-radius: 50%;
+  box-shadow: 1px 5px 15px #000000;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+  background: rgb(60, 60, 60);
+  color: #ffffff;
+}
+
+.skills .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-list,
+.contacts-list {
+  text-align: left;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+.skills-list ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  margin: 15px 0;
+  color: #00d9ff;
+}
+
+.skills-list li {
+  margin-left: 40px;
+  color: #ffffff;
+  list-style-image: url("../images/tick-small.png");
+}
+
+.skills figure {
+  user-select: none;
+}
+
+.skills figcaption,
+.experience h2,
+.projects h2,
+.contacts-logo {
+  font: 700 normal 40px "Raleway semiBold", "Arial", sans-serif;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+}
+
+.education .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.education .content h2 {
+  font: 700 normal 40px "Raleway semiBold", "Arial", sans-serif;
+}
+
+.education img  {
+  position: absolute;
+  top: calc(50% - 213px);
+  left: calc(50% - 160px);
+  opacity: 0.2;
+  filter: drop-shadow(6px 6px 30px blue);
+  user-select: none;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.education-info {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3%;
+  margin: 2% auto;
+}
+
+.leftside {
+  text-align: right;
+}
+
+.rightside {
+ text-align: left;
+}
+
+.study-period {
+  width: 200px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+}
+
+.place-of-study {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+ .faculty, 
+ .specialization {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 0;
+}
+
+.specialization {
+  font-weight: 400;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 130px 0;
+  background-image: url("../images/home-office.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.experience .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-list {
+  margin: 50px 0;
+}
+
+.experience-list p {
+  margin: 5px;
+  text-align: left;
+}
+
+.experience-list p:first-child {
+  color: #00d9ff;
+}
+
+.experience img {
+  width: 90px;
+  height: auto;
+  filter: contrast(200%);
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0;
+  background: url("../images/sandston.gif") repeat;
+}
+
+.projects .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1024px;
+  height: 400px;
+  margin: 10% auto;
+}
+
+.project-info img {
+  display: block;
+  height: 400px;
+  width: 500px;
+  filter: drop-shadow(0 2px 20px #000000);
+  user-select: none;
+  object-fit: cover;
+  user-select: none;
+  overflow: hidden;      
+}
+
+.about-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 430px;
+  height: 400px;
+  text-align: justify;
+}
+
+.project-name {
+  width: 100%;
+  margin: 0;
+  font: 700 normal 30px "Raleway semiBold", sans-serif;
+}
+
+.project-name h2 {
+  margin: 0;
+  color: rgba(90, 90, 90, 1);
+  transition: all .2s ease-in;
+  text-shadow: 1px 1px 1px #00d9ff;
+}
+
+.project-name h2:hover {
+  color: #00d9ff;
+}
+
+.project-name > a {
+  font-size: 18px;
+  text-decoration: underline;
+  transition: all .2s ease-in;
+}
+
+.project-name > a:hover {
+  text-decoration: none;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background: linear-gradient(to left, rgb(60, 60, 60), rgb(80, 80, 80));
+}
+
+.contacts .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.contacts-list figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  margin: 15px 0;
+}
+
+.contacts-list figure img,
+.contacts-list figcaption {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contacts a {
+  transition: all 0.2s ease-in;
+}
+
+.contacts a:hover {
+  color: #00d9ff;
+}
+
+.contacts img {
+  user-select: none;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: rgb(60, 60, 60);
+  box-shadow: 0 10px 20px 20px rgba(0,0,0,0.5);
+}
