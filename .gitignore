@@ -1,4 +1,4 @@
-.idea/
-node_modules/
+.idea/.md/
+node_modules//
 public/*.css
 public/*.js
